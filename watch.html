@@ -1,1 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ID MOVIE</title>
+
+<link rel="stylesheet" href="/assets/css/app.min.css">
+<link rel="preconnect" href="https://image.tmdb.org">
+</head>
+
+<body>
+
+<header class="topbar">
+  <a class="logo">ID<span>MOVIE</span></a>
+  <input id="search" placeholder="Cari film...">
+</header>
+
+<main>
+  <section class="player-wrap">
+    <video id="player" playsinline preload="metadata"></video>
+    <div id="controls"></div>
+  </section>
+
+  <section class="info">
+    <h1 id="title"></h1>
+    <p id="meta"></p>
+    <p id="overview"></p>
+  </section>
+
+  <section class="grid" id="movie-grid"></section>
+</main>
+
+<script src="/assets/js/core.js"></script>
+<script src="/assets/js/api.js"></script>
+<script src="/assets/js/player.js"></script>
+<script src="/assets/js/ui.js"></script>
+</body>
+</html>
 
